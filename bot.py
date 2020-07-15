@@ -1,5 +1,5 @@
 # bot.py
-# TabNi
+# TabNi          an easy way to activate TabNine, just delete i and put it again
 import os
 
 import discord
@@ -26,7 +26,7 @@ async def on_ready():
 
     print('Logged in as')
     print(bot.user)
-    print('@720274020607590490') #here i forced the @, u can change it, in future i'll change it so that u dont need to change
+    print('@456465465451566464') #here i forced the @, u can change it, in future i'll change it so that u dont need to change
     print(discord.__version__)
     print('------')
 
