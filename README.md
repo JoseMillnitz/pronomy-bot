@@ -9,7 +9,7 @@ i don't remember why, but i made a logging log, but i dont really care since it'
 
 i made this rep only in case someone steals my computer
 
-i dont know how to use commands, i literraly use on_message
+(i̶ ̶d̶o̶n̶t̶ ̶k̶n̶o̶w̶ ̶h̶o̶w̶ ̶t̶o̶ ̶u̶s̶e̶ ̶c̶o̶m̶m̶a̶n̶d̶s̶,̶ ̶i̶ ̶l̶i̶t̶e̶r̶r̶a̶l̶y̶ ̶u̶s̶e̶ ̶o̶n̶_̶m̶e̶s̶s̶a̶g̶e̶) now i use commands correctly
 
 on_member_ events r have their own notes
 
