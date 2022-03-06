@@ -1,4 +1,6 @@
 # pronomy-bot
+discord.py is no longer supported and my discord server basically died, so i'll do something in the future a bit different, but no discord bot for sometime
+
 a bot for my discord server
 
 libs: discord.py and .env
