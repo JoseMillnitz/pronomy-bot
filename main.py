@@ -178,7 +178,7 @@ async def moeda(ctx):
 @commands.is_nsfw()
 async def poke(ctx, *, args):
     with nsfw_dl.NSFWDL() as dl:
-        img = dl.download("GelbooruSearch", args=f'{args}')
+        img = dl.download("DanbooruSearch", args=f'{args}')
         assert img
         await ctx.send(img)
 
