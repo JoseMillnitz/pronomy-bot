@@ -20,7 +20,6 @@ intents.members = True
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN') #token
 PREFIX = os.getenv('PREFIX')
-COIN = os.getenv('COINFLIP') #variables for a gambling game
 GUILD = os.getenv('DISCORD_GUILD') #its not defined, dont remember why, but still works
 client = Bot(description="Bot para grupo pronomy https://discord.gg/xqfW8jE", command_prefix=PREFIX, pm_help = False, intents=intents)
 ctx ='*args' #it is a bug fix for my first try in making commands, i dont know why, but it happened
@@ -142,26 +141,9 @@ async def ping(ctx):
 
 @client.command(brief='Lancemos uma moeda para definir esta batalha mortal', description='podem vir 3 coisas para voce nesse jogo de pura sorte cara, coroa e de pé 1 em 6000')
 async def moeda(ctx):
-    x = (COIN)
-    (random.choice(x))
-    if (random.choice(x)) == "U":
-            await ctx.send('Jogando a moeda'.format(ctx))
-            await ctx.send('pling'.format(ctx))
-            await asyncio.sleep(2)
-            await ctx.send('e o que caiu foi...'.format(ctx))
-            await asyncio.sleep(1)
-            await ctx.send('Caiu Cara! parabens para quem escolheu Cara :upside_down:'.format(ctx))
-            return
-    elif (random.choice(x)) == "O":
-            await ctx.send('Jogando a moeda'.format(ctx))
-            await ctx.send('pling'.format(ctx))
-            await asyncio.sleep(2)
-            await ctx.send('e o que caiu foi...'.format(ctx))
-            await asyncio.sleep(1)
-            await ctx.send('Caiu Coroa! parabens para quem escolheu Coroa :crown:'.format(ctx))
-            return
-    elif (random.choice(x)) == "I":
-            await ctx.send('Jogando a moeda'.format(ctx))
+    x = random.randint(1, 6000)
+    if x == 1:
+	    await ctx.send('Jogando a moeda'.format(ctx))
             await ctx.send('pling'.format(ctx))
             await asyncio.sleep(2)
             await ctx.send('e o que caiu foi...'.format(ctx))
@@ -170,6 +152,22 @@ async def moeda(ctx):
             await asyncio.sleep(1)
             await ctx.send('...'.format(ctx))
             await ctx.send('Por essa nem eu esperava, isso acontece uma vez a cada 6000 jogadas, Parabens voce jogou a moeda de PÉ :arrow_up:')
+            return
+    elif get % 2 != 0:
+            await ctx.send('Jogando a moeda'.format(ctx))
+            await ctx.send('pling'.format(ctx))
+            await asyncio.sleep(2)
+            await ctx.send('e o que caiu foi...'.format(ctx))
+            await asyncio.sleep(1)
+            await ctx.send('Caiu Coroa! parabens para quem escolheu Coroa :crown:'.format(ctx))
+            return
+    else:
+            await ctx.send('Jogando a moeda'.format(ctx))
+            await ctx.send('pling'.format(ctx))
+            await asyncio.sleep(2)
+            await ctx.send('e o que caiu foi...'.format(ctx))
+            await asyncio.sleep(1)
+            await ctx.send('Caiu Cara! parabens para quem escolheu Cara :upside_down:'.format(ctx))
             return
 
 #future NSFW command
